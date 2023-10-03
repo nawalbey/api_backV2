@@ -1,0 +1,50 @@
+###
+GET http://localhost/api_back/getuserlist/
+
+###
+POST http://localhost/api_back/
+
+
+{
+    "pseudo": "robin des bois",
+    "password": "robs60",
+    "action": "login"
+    // ce format de donnée est du json
+    // c'est pour cela que l'on utilise la fonction json_decode pour que PHP puisse comprendre le langage (cf : fichier index.php)
+    // json_encode : converti en format JSON
+    
+
+}
+
+#       "pseudo": "cynthia",
+#       "password": "passer",
+#       "action": "login"
+
+
+###
+POST http://localhost/api_back/
+
+
+{
+    "pseudo": "batman",
+    "password": "robs60",
+    "firstname": "Andrews",
+    "lastname": "ROBIN",
+    "action": "register"
+
+}
+
+
+###
+POST http://localhost/api_back/
+
+
+{
+    "expeditor": 3,
+    "receiver": 4,
+    "message": "Ah oui c'est vrai, tu vas au festival ?",
+    "action": "send message"
+
+}
+###
+GET http://localhost/api_back/getListMessage/3/4
